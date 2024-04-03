@@ -1,4 +1,6 @@
 def calculate_total_sales(sales_list):
+    total = 0
+    for sale in sales_list
     ...  # TODO Вычислите общую стоимость проданных товаров из списка `sales_list`
 
 

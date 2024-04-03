@@ -12,7 +12,7 @@ files:
     visible: true
     placeholders:
       - offset: 0
-        length: 307
+        length: 829
         placeholder_text: |-
           money_capital = 20000  # Подушка безопасности
           salary = 5000  # Ежемесячная зарплата
@@ -26,7 +26,7 @@ files:
           length: 307
           offset: 0
         initialized_from_dependency: false
-        selected: false
+        selected: true
         status: Unchecked
         encrypted_possible_answer: |-
           money_capital = 20000  # Подушка безопасности

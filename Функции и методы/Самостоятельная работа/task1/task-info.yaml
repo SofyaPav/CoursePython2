@@ -14,7 +14,7 @@ files:
           offset: 0
         initialized_from_dependency: false
         selected: false
-        status: Unchecked
+        status: Failed
         encrypted_possible_answer: |-
           def remove_whitespace(str_):
               words_list = str_.split(" ")
@@ -44,5 +44,8 @@ files:
       123. test bks
       print test11
     learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: Error during execution
+  time: "Wed, 27 Mar 2024 16:59:49 UTC"
 record: -1

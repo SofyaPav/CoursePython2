@@ -11,12 +11,12 @@ files:
           offset: 0
         initialized_from_dependency: false
         selected: false
-        status: Unchecked
+        status: Failed
         encrypted_possible_answer: |-
           def multiply_numbers(a, b):
               product = a * b
               return product
-      - offset: 45
+      - offset: 108
         length: 95
         placeholder_text: '# TODO Перемножте с помощью функции `multiply_numbers` при
       пары чисел и распечатайте результаты'
@@ -24,8 +24,8 @@ files:
           length: 95
           offset: 45
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Failed
         encrypted_possible_answer: |-
           result1 = multiply_numbers(2, 3)
           result2 = multiply_numbers(4, 5)
@@ -50,5 +50,14 @@ files:
       20
       42
     learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: Incorrect
+  time: "Wed, 27 Mar 2024 16:01:54 UTC"
+  expected: |
+    6
+    20
+    42
+  actual: |
+    6
 record: -1

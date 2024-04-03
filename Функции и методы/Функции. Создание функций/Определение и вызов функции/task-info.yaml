@@ -4,13 +4,13 @@ files:
     visible: true
     placeholders:
       - offset: 68
-        length: 49
+        length: 50
         placeholder_text: "\"Hello, World\")  # TODO Поменяйте значение строки"
         initial_state:
           length: 49
           offset: 68
         initialized_from_dependency: false
-        selected: false
+        selected: true
         status: Solved
         encrypted_possible_answer: "\"Hello, World!!!\")"
     text: |
@@ -28,5 +28,7 @@ files:
     visible: false
     learner_created: false
 status: Solved
+feedback:
+  time: "Wed, 27 Mar 2024 15:43:54 UTC"
 record: -1
 post_submission_on_open: true
