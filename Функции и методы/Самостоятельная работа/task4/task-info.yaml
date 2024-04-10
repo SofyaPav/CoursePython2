@@ -13,11 +13,12 @@ files:
           length: 48
           offset: 0
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
         encrypted_possible_answer: |-
           def insert(list_, value, index=0):
               return list_[:index] + [value] + list_[index:]
+        selected: false
+        status: Failed
+        is_visible: false
     text: |
       # TODO реализовать функцию
       def insert():
@@ -38,5 +39,8 @@ files:
       [0, 1, 2]
       [0, 1, 2, 3]
     learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: Error during execution
+  time: "Wed, 10 Apr 2024 06:40:38 UTC"
 record: -1
