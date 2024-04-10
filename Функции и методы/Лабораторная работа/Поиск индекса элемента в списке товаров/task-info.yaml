@@ -4,31 +4,29 @@ files:
     visible: true
     placeholders:
       - offset: 0
-        length: 33
+        length: 136
         placeholder_text: '# TODO Напишите функцию для поиска индекса товара'
         initial_state:
           length: 49
           offset: 0
         initialized_from_dependency: false
+        selected: false
+        status: Solved
         encrypted_possible_answer: |-
           def find_item_index(items, item):
               for index, current_item in enumerate(items):
                   if current_item == item:
                       return index
-        selected: false
-        status: Solved
-        is_visible: false
-      - offset: 302
-        length: 29
+      - offset: 275
+        length: 56
         placeholder_text: "...  # TODO Вызовите функцию, что получить индекс товара"
         initial_state:
           length: 56
           offset: 188
         initialized_from_dependency: false
-        encrypted_possible_answer: "find_item_index(items_list, find_item)"
         selected: false
         status: Solved
-        is_visible: false
+        encrypted_possible_answer: "find_item_index(items_list, find_item)"
     text: |
       # TODO Напишите функцию для поиска индекса товара
       
@@ -55,6 +53,6 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Wed, 10 Apr 2024 09:07:34 UTC"
+  time: "Wed, 10 Apr 2024 15:11:11 UTC"
 record: -1
 solution_hidden: true
