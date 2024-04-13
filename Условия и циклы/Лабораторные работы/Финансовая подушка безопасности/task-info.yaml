@@ -8,11 +8,11 @@ files:
     text: |
       Количество месяцев, которое можно протянуть без долгов: 8
     learner_created: false
-  - name: main.py
+  - name: task_1.py
     visible: true
     placeholders:
       - offset: 0
-        length: 829
+        length: 362
         placeholder_text: |-
           money_capital = 20000  # Подушка безопасности
           salary = 5000  # Ежемесячная зарплата
@@ -23,11 +23,9 @@ files:
           
           print("Количество месяцев, которое можно протянуть без долгов:", ...)
         initial_state:
-          length: 307
+          length: 362
           offset: 0
         initialized_from_dependency: false
-        selected: true
-        status: Unchecked
         encrypted_possible_answer: |-
           money_capital = 20000  # Подушка безопасности
           salary = 5000  # Ежемесячная зарплата
@@ -46,6 +44,9 @@ files:
               spend *= 1 + increase
           
           print("Количество месяцев, которое можно протянуть без долгов:", month)
+        selected: true
+        status: Solved
+        is_visible: false
     text: |
       money_capital = 20000  # Подушка безопасности
       salary = 5000  # Ежемесячная зарплата
@@ -56,6 +57,9 @@ files:
       
       print("Количество месяцев, которое можно протянуть без долгов:", ...)
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sat, 13 Apr 2024 13:18:15 UTC"
 record: -1
 solution_hidden: true

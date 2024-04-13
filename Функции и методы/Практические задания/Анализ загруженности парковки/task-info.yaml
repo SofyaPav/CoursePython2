@@ -10,12 +10,13 @@ files:
           length: 48
           offset: 0
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
         encrypted_possible_answer: |-
           def calculate_parking_load(total_parking_spaces, occupied_parking_spaces):
               parking_load = (occupied_parking_spaces / total_parking_spaces) * 100
               return round(parking_load)
+        selected: false
+        status: Failed
+        is_visible: false
     text: |
       # TODO Напишите функцию `calculate_parking_load`
     learner_created: false
@@ -87,5 +88,8 @@ files:
   - name: tests/__init__.py
     visible: false
     learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: Error during execution
+  time: "Sat, 13 Apr 2024 17:48:48 UTC"
 record: -1

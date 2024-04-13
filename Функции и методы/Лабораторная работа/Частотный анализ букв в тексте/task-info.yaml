@@ -10,8 +10,6 @@ files:
           length: 38
           offset: 0
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
         encrypted_possible_answer: |-
           def count_letters(text):
               lower_text = text.lower()
@@ -24,6 +22,9 @@ files:
                       else:
                           letter_count[char] = 1
               return letter_count
+        selected: false
+        status: Unchecked
+        is_visible: false
       - offset: 41
         length: 43
         placeholder_text: '# TODO Напишите функцию calculate_frequency'
@@ -31,27 +32,29 @@ files:
           length: 43
           offset: 41
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
         encrypted_possible_answer: "def calculate_frequency(letter_count):\n    total_letters\
       \ = sum(letter_count.values())\n    \n    letter_frequency = {}\n    for current_letter,\
       \ count in letter_count.items():\n        letter_frequency[current_letter] =\
       \ count / total_letters\n        \n    return letter_frequency"
-      - offset: 999
-        length: 57
+        selected: false
+        status: Unchecked
+        is_visible: false
+      - offset: 1252
+        length: 233
         placeholder_text: '# TODO Распечатайте в столбик букву и её частоту в тексте'
         initial_state:
           length: 57
           offset: 999
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
         encrypted_possible_answer: |-
           count_dict = count_letters(main_str)
           frequency_dict = calculate_frequency(count_dict)
           
           for letter, frequency in frequency_dict.items():
               print(f"{letter}: {frequency:.2f}")
+        selected: false
+        status: Unchecked
+        is_visible: false
     text: |
       # TODO  Напишите функцию count_letters
       

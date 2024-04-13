@@ -20,10 +20,10 @@ files:
           
               return common_participants
         selected: false
-        status: Failed
+        status: Solved
         is_visible: false
-      - offset: 361
-        length: 129
+      - offset: 642
+        length: 65
         placeholder_text: '# TODO Провеьте работу функции с разделителем отличным от запятой'
         initial_state:
           length: 65
@@ -33,7 +33,7 @@ files:
           participants = find_common_participants(participants_first_group, participants_second_group)
           print("Общие участники:", participants)
         selected: false
-        status: Failed
+        status: Solved
         is_visible: false
     text: |
       # TODO Напишите функцию find_common_participants
@@ -119,9 +119,9 @@ files:
   - name: tests/__init__.py
     visible: false
     learner_created: false
-status: Failed
+status: Solved
 feedback:
-  message: Error during execution
-  time: "Wed, 10 Apr 2024 13:11:14 UTC"
+  message: Congratulations!
+  time: "Sat, 13 Apr 2024 15:24:55 UTC"
 record: -1
 solution_hidden: true

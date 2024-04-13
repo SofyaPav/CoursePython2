@@ -39,5 +39,29 @@ main_str = """
 Под ним сидел, и кот учёный
 Свои мне сказки говорил.
 """
-
+main_str = main_str.lower()
+print(main_str)
+for i in main_str:
+    if not i.isalpha():
+       main_str = main_str.replace(i, '')
+       print(main_str)
+set_1 = set(main_str)
+dict_1 = {}
+for i in set_1:
+    x = main_str.count(i)
+    dict_1.update({i: x})
 # TODO Распечатайте в столбик букву и её частоту в тексте
+
+len_ = len(main_str)
+dict_2 = {}
+
+for i in set_1:
+    x = main_str.count(i)
+    h = x / len_
+    y = round(h, 2)
+    dict_2.update({i: y})
+for item in dict_2:
+    print(item)
+print(dict_1)
+print(len_)
+print(dict_2)
