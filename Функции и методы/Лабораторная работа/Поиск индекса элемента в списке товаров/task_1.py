@@ -6,8 +6,8 @@ def search(list_name, item_name):
         i = None
         return i
 
-items_list = ['яблоко', 'банан', 'апельсин', 'груша', 'киви', 'банан']
 
+items_list = ['яблоко', 'банан', 'апельсин', 'груша', 'киви', 'банан']
 for find_item in ['банан', 'груша', 'персик']:
     index_item = search(items_list, find_item)
     if index_item is not None:

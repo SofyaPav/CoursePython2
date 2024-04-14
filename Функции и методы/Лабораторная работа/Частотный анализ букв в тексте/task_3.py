@@ -1,7 +1,28 @@
 # TODO  Напишите функцию count_letters
-
+def count_letters(str_name):
+    str_name = str_name.lower()
+    for i in str_name:
+        if not i.isalpha():
+            str_name = str_name.replace(i, '')
+    set_ = set(str_name)
+    dict_ = {}
+    for i in set_:
+        x = str_name.count(i)
+        dict_.update({i: x})
+    return dict_
 
 # TODO Напишите функцию calculate_frequency
+
+
+def calculate_frequency(dict_name):
+    len_ = 0
+    dict_ = {}
+    for i in dict_name.values():
+        len_ = len_ + i
+    for key_, value_ in dict_name.items():
+        frequency = value_/len_
+        dict_.update({key_: frequency})
+    return dict_
 
 
 main_str = """
@@ -39,29 +60,9 @@ main_str = """
 Под ним сидел, и кот учёный
 Свои мне сказки говорил.
 """
-main_str = main_str.lower()
-print(main_str)
-for i in main_str:
-    if not i.isalpha():
-       main_str = main_str.replace(i, '')
-       print(main_str)
-set_1 = set(main_str)
-dict_1 = {}
-for i in set_1:
-    x = main_str.count(i)
-    dict_1.update({i: x})
+
 # TODO Распечатайте в столбик букву и её частоту в тексте
-
-len_ = len(main_str)
-dict_2 = {}
-
-for i in set_1:
-    x = main_str.count(i)
-    h = x / len_
-    y = round(h, 2)
-    dict_2.update({i: y})
-for item in dict_2:
-    print(item)
-print(dict_1)
-print(len_)
-print(dict_2)
+res_1 = count_letters(main_str)
+res_2 = calculate_frequency(res_1)
+for key, value in res_2.items():
+    print(key, ':', round(value, 2))

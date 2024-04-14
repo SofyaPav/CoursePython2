@@ -19,7 +19,7 @@ def contains_list_comprehension(code):
 
 class TestCase(unittest.TestCase):
     def test_contains_list_comprehension(self):
-        filepath = "task.py"
+        filepath = "task_2.py"
         with open(filepath) as f:
             assert contains_list_comprehension(f.read()) is True, (
                 'Проверьте, что в функции `get_student_names` используется list comprehension.'

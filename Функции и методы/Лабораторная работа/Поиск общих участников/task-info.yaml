@@ -1,6 +1,6 @@
 type: edu
 files:
-  - name: task.py
+  - name: task_2.py
     visible: true
     placeholders:
       - offset: 0
@@ -27,7 +27,7 @@ files:
         placeholder_text: '# TODO Провеьте работу функции с разделителем отличным от запятой'
         initial_state:
           length: 65
-          offset: 156
+          offset: 642
         initialized_from_dependency: false
         encrypted_possible_answer: |-
           participants = find_common_participants(participants_first_group, participants_second_group)

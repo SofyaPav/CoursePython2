@@ -40,7 +40,7 @@ class TestCase(unittest.TestCase):
         )
 
     def test_use_lambda_in_get_nearest_shop(self):
-        filepath = "task.py"
+        filepath = "task_2.py"
         with open(filepath) as f:
             assert has_lambda(f.read()) is True, (
                 'Проверьте, что в функции `get_nearest_shop` используется lambda функция.'
