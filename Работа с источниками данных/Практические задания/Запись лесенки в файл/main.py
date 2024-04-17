@@ -2,10 +2,14 @@ INPUT_FILE = "input.txt"
 
 
 OUTPUT_FILE = "output.txt"
-
+b = 0
 
 def task():
-    ...  # TODO построчно записать лесенку в файл
+    with open(OUTPUT_FILE, 'w', encoding="utf-8") as f:
+        for i in range(1, 11):
+            f.write(f'{"*"*i}\n')
+
+
 
 
 if __name__ == '__main__':

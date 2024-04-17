@@ -3,11 +3,11 @@ files:
   - name: __init__.py
     visible: false
     learner_created: false
-  - name: task_2.py
+  - name: main.py
     visible: true
     placeholders:
       - offset: 0
-        length: 378
+        length: 354
         placeholder_text: |-
           salary = 5000  # Ежемесячная зарплата
           spend = 6000  # Траты за первый месяц
@@ -18,9 +18,11 @@ files:
           
           print(f"Подушка безопасности, чтобы протянуть {months} месяцев без долгов:", ...)
         initial_state:
-          length: 378
+          length: 354
           offset: 0
         initialized_from_dependency: false
+        selected: false
+        status: Unchecked
         encrypted_possible_answer: |-
           salary = 5000  # Ежемесячная зарплата
           spend = 6000  # Траты за первый месяц
@@ -34,9 +36,6 @@ files:
               spend *= 1 + increase
           
           print(f"Подушка безопасности, чтобы протянуть {months} месяцев без долгов:", round(money_capital))
-        selected: false
-        status: Solved
-        is_visible: false
     text: |
       salary = 5000  # Ежемесячная зарплата
       spend = 6000  # Траты за первый месяц
@@ -52,9 +51,9 @@ files:
     text: |
       Подушка безопасности, чтобы протянуть 10 месяцев без долгов: 18783
     learner_created: false
-status: Solved
-feedback:
-  message: Congratulations!
-  time: "Sat, 13 Apr 2024 13:55:18 UTC"
+  - name: task_2.py
+    visible: true
+    learner_created: true
+status: Unchecked
 record: -1
 solution_hidden: true
